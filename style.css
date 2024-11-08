@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+}
+body{
+    background-color: rgb(1, 1, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 60%; */
+    width: 50%;
+    background-color: rgb(44, 42, 42);
+    color: aliceblue;
+    padding: 10px;
+    gap: 1vh;
+    border: 2px solid rgb(92, 89, 89);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    min-height: 300px;
+    max-width: 400px;
+}
+img{
+    height: 20%;
+    width: 20%;
+}
+h1{
+    font-size: 1.7rem;
+    color: rgb(31, 178, 58);
+}
+.user-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.user-input-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+}
+p{
+    font-size: 0.9em;
+}
+#user-input{
+    width: 64%;
+    border: none;
+    border-radius: 2px;
+    font-size: 0.8em;
+    padding: 2px;
+}
+#search-btn{
+    width: 30%;
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(31, 178, 58);
+    color: white;
+    font-size: 0.8em;
+    transition: 0.4s all;
+}
+#search-btn:hover{
+    box-shadow: 0px 0px 2px white;
+    letter-spacing: 1px;
+}
+.stats-container{
+    width: 100%;
+    height: 50%;
+    display: none;
+}
+.progress{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    height: 50%;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+}
+.circle{
+    background: conic-gradient(#299f5d var(--progress-degree, 30%), #283a2e 0%);
+    height: 80px;
+    width: 80px;
+    aspect-ratio: 1/1;
+    border: 2px solid rgb(134, 144, 139);
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    flex-direction: column;
+}
+.stats-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2vh;
+    gap: 5px;
+    color: #299f5d;
+    font-weight: 500;
+}
